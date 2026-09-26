@@ -10,19 +10,25 @@ A small, portable, MIDI keyboard to make beats on the go.
 
 ## Quick Start
 
-1. Hold **BOOT** and plug in your Raspberry pi pico.
-2. Drop `install.ps1` onto the `RPI-RP2` drive.
-3. Plug it back in and make some sound.
+1. Download this repo and open the `firmware` folder.
+2. Hold **BOOTSEL** and plug in the Pico — a drive called `RPI-RP2` appears.
+3. Run `install.ps1` (right-click → Run with PowerShell). It flashes CircuitPython,
+   then waits for the `CIRCUITPY` drive and copies all the code on automatically.
+34. Plug it back in and make some sound.
 
 ---
 
 ## Features
 
-- **Display** to display custom memes or other info
 - **2 Rotary encoders and button** for parameter adjustments.
 - **12 keys** to make beats
 - **2 sliders** to make additional parameter adjustments
 - **LEDs** for some disco
+- **Standalone beat machine** — 16-step sequencer, 6 patterns, runs on battery, no computer
+- **3 key layouts** (piano / mirror / drums) with on-screen switching
+- **Arpeggiator** with rate & direction controls
+- **2 rotary encoders** (pushable) + **2 sliders**, all remappable on the fly
+- **1.8" color display** with live view of keys, sliders, and layout
 ---
 
 ## Defaults (if you don't want to change anything):
@@ -91,16 +97,18 @@ Flash the firmware with install.ps1 (hold BOOTSEL while plugging in when prompte
 ## BOM
 
 - 1x Raspberry PI Pico with headers
-- 12x through-hole 1N4148 Diodes
+- 14x through-hole 1N4148 Diodes
 - 12x MX-Style switches
 - 2x EC11 Rotary encoder
 - 1.8 Inch TFT LCD Screen Display *(GND, VCC, SCL, SDA, RES, DC, CS, BL)*
 - 12x blank DSA keycaps
 - 4x M3x11mm screws
 - Adafruit PCM5100 I2S DAC breakout
-- SK6812MINI-E mini LEDs
-- 1x 0.91 inch OLED display *(the pin order is GND-VCC-SCL-SDA, **MAKE SURE YOUR PCB MATCHES**)*
-- Bourns PTA2043-2210DPB103 slide potentometer
+- 14x SK6812MINI-E mini LEDs
+- 2x Bourns PTA2043-2210DPB103 slide potentometer
+- TP4056 Type-c USB Battery Charger Module
+- 3000 MAH lipo 1s battery
+- SS12D00 Mini Slide Switch
 
 ---
 
