@@ -8,7 +8,7 @@ A small, portable, MIDI keyboard to make beats on the go.
 
 ---
 
-#Quick Start
+## Quick Start
 
 1. Hold **BOOT** and plug in your Raspberry pi pico.
 2. Drop `install.ps1` onto the `RPI-RP2` drive.
